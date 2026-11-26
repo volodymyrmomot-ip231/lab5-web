@@ -1,0 +1,117 @@
+.facts-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #111827;
+    color: white;
+}
+
+.facts-card {
+    width: 100%;
+    max-width: 760px;
+    padding: 35px;
+    background: #1c2636;
+    border: 1px solid #334155;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.facts-label {
+    color: #a5b4fc;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.facts-card h1 {
+    font-size: 30px;
+    margin: 24px 0;
+}
+
+.fact-content {
+    background: #111827;
+    border: 1px solid #334155;
+    padding: 30px;
+    min-height: 120px;
+    border-radius: 15px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facts-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.facts-card button {
+    background: #6366f1;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.facts-card button:hover {
+    background: #4f46e5;
+}
+
+.facts-card button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.facts-message {
+    color: #a5b4fc;
+    padding: 12px;
+}
+
+.favorite-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background: #111827;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 12px;
+    text-align: left;
+}
+
+.favorite-item button {
+    background: #991b1b;
+}
+
+.favorite-item button:hover {
+    background: #b91c1c;
+}
+
+.facts-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.facts-links a {
+    color: #a5b4fc;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .facts-card {
+        padding: 20px;
+    }
+
+    .favorite-item {
+        flex-direction: column;
+    }
+}
